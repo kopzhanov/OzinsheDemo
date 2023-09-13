@@ -39,6 +39,19 @@ class ProfileViewController: UIViewController, LanguageProtocol {
         }
     }
     
+    @IBAction func LeaveProfile(_ sender: Any) {
+        let leaveProfileVC = storyboard?.instantiateViewController(withIdentifier: "LeaveProfileViewController") as! LeaveProfileViewController
+        
+        leaveProfileVC.modalPresentationStyle = .overFullScreen
+        
+        present(leaveProfileVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func EditProfileShow(_ sender: Any) {
+        let editProfileVC = storyboard?.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
+        navigationController?.show(editProfileVC, sender: self)
+    }
+    
     @IBAction func LanguageShow(_ sender: Any) {
         let languageVC = storyboard?.instantiateViewController(withIdentifier: "LanguageViewController") as! LanguageViewController
         
