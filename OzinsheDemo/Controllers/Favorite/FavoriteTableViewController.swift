@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import SVProgressHUD
+import Alamofire
+import SwiftyJSON
 
 class FavoriteTableViewController: UITableViewController {
     
-    var arrayFavorite = ["Image1","Image2","Image3"]
+    var arrayFavorite: [Movie] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +22,44 @@ class FavoriteTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        downloadFavorites()
+    }
+    
+    func downloadFavorites(){
+        SVProgressHUD.show()
+        
+        let headers: HTTPHeaders = ["Authorization":"Bearer \(Storage.sharedInstance.accessToken)"]
+        
+        AF.request(Urls.FAVORITE_URL, method: .get, headers: headers).responseData { response in
+            SVProgressHUD.dismiss()
+            var resultString = ""
+            if let data = response.data{
+                resultString = String(data: data, encoding: .utf8)!
+                print(resultString)
+            }
+            
+            if response.response?.statusCode == 200 {
+                let json = JSON(response.data!)
+                print("JSON: \(json)")
+                
+                if let array = json.array {
+                    for item in array{
+                        let movie = Movie(json:item)
+                        self.arrayFavorite.append(movie)
+                    }
+                    self.tableView.reloadData()
+                } else {
+                    SVProgressHUD.showError(withStatus: "Connection Error")
+                }
+            } else {
+                var ErrorString = "Connection Error"
+                if let sCode = response.response?.statusCode{
+                    ErrorString = ErrorString + " \(sCode)"
+                }
+                ErrorString = ErrorString + " \(resultString)"
+                SVProgressHUD.showError(withStatus: "\(ErrorString)")
+            }
+        }
     }
 
     // MARK: - Table view data source
