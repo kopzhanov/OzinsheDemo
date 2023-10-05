@@ -105,6 +105,11 @@ class SignInViewController: UIViewController {
         tabViewController?.modalPresentationStyle = .fullScreen
         self.present(tabViewController!,animated: true,completion: nil)
     }
-
+    
+    @IBAction func signUptransition(_ sender: Any) {
+        let signUpVC = storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        navigationController?.show(signUpVC, sender: self)
+    }
+    
 }
 
