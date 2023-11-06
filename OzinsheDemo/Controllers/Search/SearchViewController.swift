@@ -67,10 +67,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
         layout.estimatedItemSize.width = 100
         collectionView.collectionViewLayout = layout
                 
-        //searchTextField.padding = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16);
-        
-        searchTextField.padding.left = 16
-        searchTextField.padding.right = 16
+        searchTextField.padding = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         
         searchTextField.layer.cornerRadius = 12.0
         searchTextField.layer.borderWidth = 1.0
