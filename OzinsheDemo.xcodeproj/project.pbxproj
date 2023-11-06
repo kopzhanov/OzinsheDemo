@@ -12,6 +12,7 @@
 		3B32AA722AAC3EB300B1CACA /* LeaveProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B32AA712AAC3EB300B1CACA /* LeaveProfileViewController.swift */; };
 		3B3FEB9A2A802D61007C1453 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FEB992A802D61007C1453 /* ProfileViewController.swift */; };
 		3B3FEB9C2A803549007C1453 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FEB9B2A803549007C1453 /* LanguageViewController.swift */; };
+		3B4996E02ACFC2A500EFF588 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4996DF2ACFC2A500EFF588 /* SearchViewController.swift */; };
 		3B4E89C52ACB04C6003B2009 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E89C42ACB04C6003B2009 /* Urls.swift */; };
 		3B4E89CA2ACB0744003B2009 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E89C92ACB0744003B2009 /* Storage.swift */; };
 		3B4E89CD2ACB15EE003B2009 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E89CC2ACB15EE003B2009 /* Movie.swift */; };
@@ -22,6 +23,8 @@
 		3B4E89D72ACD333A003B2009 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E89D62ACD333A003B2009 /* Profile.swift */; };
 		3B4E89D92ACE98D7003B2009 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E89D82ACE98D7003B2009 /* SignUpViewController.swift */; };
 		3B520ECA2A801C1E00B978D7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B520ECC2A801C1E00B978D7 /* Localizable.strings */; };
+		3B6D5DAC2AF1A07100F0C98F /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6D5DAB2AF1A07100F0C98F /* CategoryTableViewController.swift */; };
+		3B6D5DAE2AF1A34700F0C98F /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6D5DAD2AF1A34700F0C98F /* MovieCell.xib */; };
 		3B8B569D2A6A881400119AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B569C2A6A881400119AD7 /* AppDelegate.swift */; };
 		3B8B569F2A6A881400119AD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B569E2A6A881400119AD7 /* SceneDelegate.swift */; };
 		3B8B56A12A6A881400119AD7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B56A02A6A881400119AD7 /* SignInViewController.swift */; };
@@ -43,6 +46,7 @@
 		3B32AA712AAC3EB300B1CACA /* LeaveProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveProfileViewController.swift; sourceTree = "<group>"; };
 		3B3FEB992A802D61007C1453 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3B3FEB9B2A803549007C1453 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		3B4996DF2ACFC2A500EFF588 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3B4E89C42ACB04C6003B2009 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		3B4E89C92ACB0744003B2009 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		3B4E89CC2ACB15EE003B2009 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		3B520ECB2A801C1E00B978D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3B520ECD2A801C5F00B978D7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3B520ECE2A801C9600B978D7 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3B6D5DAB2AF1A07100F0C98F /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		3B6D5DAD2AF1A34700F0C98F /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		3B8B56992A6A881400119AD7 /* OzinsheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OzinsheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8B569C2A6A881400119AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8B569E2A6A881400119AD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 		3B8B56B52A6AA3A700119AD7 /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProDisplay-Bold.ttf"; path = "OzinsheDemo/Fonts/SFProDisplay-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		3B8F45D32A88BCC000BB21A3 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		3BD01E942AC7E17A00EB3B49 /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		3BDC7ECD2AF8ACB8009DF06B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		868BA76430E6791776B54DC5 /* Pods_OzinsheDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OzinsheDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3682545D25691642C52235E /* Pods-OzinsheDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo.debug.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E72B72D5F969B03141CACF6E /* Pods-OzinsheDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo.release.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,9 +98,12 @@
 			children = (
 				3B8B56B02A6A9B7400119AD7 /* TabBarController.swift */,
 				3B8B56A02A6A881400119AD7 /* SignInViewController.swift */,
+				3B6D5DAA2AF19FF900F0C98F /* Search */,
 				3BFEC6BD2AC7B21A002D89EA /* Favorite */,
 				3BFEC6BC2AC7B20F002D89EA /* Profile */,
 				3B4E89D82ACE98D7003B2009 /* SignUpViewController.swift */,
+				3B6D5DAD2AF1A34700F0C98F /* MovieCell.xib */,
+				3B25CDC82A6AB02100F86548 /* MovieTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,6 +135,15 @@
 				3B4E89D62ACD333A003B2009 /* Profile.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3B6D5DAA2AF19FF900F0C98F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3B4996DF2ACFC2A500EFF588 /* SearchViewController.swift */,
+				3B6D5DAB2AF1A07100F0C98F /* CategoryTableViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		3B8B56902A6A881400119AD7 = {
@@ -198,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				3B25CDC62A6AAEFB00F86548 /* FavoriteTableViewController.swift */,
-				3B25CDC82A6AB02100F86548 /* MovieTableViewCell.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -215,6 +233,7 @@
 		D8754BBCFF9A8F77E90FC0D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BDC7ECD2AF8ACB8009DF06B /* SwiftUI.framework */,
 				868BA76430E6791776B54DC5 /* Pods_OzinsheDemo.framework */,
 			);
 			name = Frameworks;
@@ -288,6 +307,7 @@
 				3B520ECA2A801C1E00B978D7 /* Localizable.strings in Resources */,
 				3B8B56B82A6AA3A700119AD7 /* SFProDisplay-Bold.ttf in Resources */,
 				3B8B56A42A6A881400119AD7 /* Main.storyboard in Resources */,
+				3B6D5DAE2AF1A34700F0C98F /* MovieCell.xib in Resources */,
 				3B8B56B62A6AA3A700119AD7 /* SFProDisplay-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +376,8 @@
 				3B32AA722AAC3EB300B1CACA /* LeaveProfileViewController.swift in Sources */,
 				3BD01E952AC7E17A00EB3B49 /* TextFieldWithPadding.swift in Sources */,
 				3B4E89D92ACE98D7003B2009 /* SignUpViewController.swift in Sources */,
+				3B6D5DAC2AF1A07100F0C98F /* CategoryTableViewController.swift in Sources */,
+				3B4996E02ACFC2A500EFF588 /* SearchViewController.swift in Sources */,
 				3B8B569D2A6A881400119AD7 /* AppDelegate.swift in Sources */,
 				3B8B569F2A6A881400119AD7 /* SceneDelegate.swift in Sources */,
 				3B4E89D72ACD333A003B2009 /* Profile.swift in Sources */,
@@ -447,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -502,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -527,6 +549,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +581,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

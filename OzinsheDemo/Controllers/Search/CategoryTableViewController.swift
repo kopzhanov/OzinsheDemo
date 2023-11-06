@@ -1,40 +1,39 @@
 //
-//  FavoriteTableViewController.swift
+//  CategoryTableViewController.swift
 //  OzinsheDemo
 //
-//  Created by Alikhan Kopzhanov on 21.07.2023.
+//  Created by Alikhan Kopzhanov on 01.11.2023.
 //
 
 import UIKit
-import SVProgressHUD
-import Alamofire
 import SwiftyJSON
+import Alamofire
+import SVProgressHUD
 
-class FavoriteTableViewController: UITableViewController {
+class CategoryTableViewController: UITableViewController {
     
-    var arrayFavorite: [Movie] = []
+    var categoryID = 0
+    var categoryName = ""
+    
+    var movies:[Movie] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.title = categoryName
         
         let MovieCellnib = UINib(nibName: "MovieCell", bundle: nil)
         tableView.register(MovieCellnib, forCellReuseIdentifier: "MovieCell")
         
-        downloadFavorites()
+        downloadMoviesByCategory()
     }
     
-    func downloadFavorites(){
+    func downloadMoviesByCategory(){
         SVProgressHUD.show()
         
         let headers: HTTPHeaders = ["Authorization":"Bearer \(Storage.sharedInstance.accessToken)"]
+        let parameters = ["categoryId:": categoryID]
         
-        AF.request(Urls.FAVORITE_URL, method: .get, headers: headers).responseData { response in
+        AF.request(Urls.MOVIES_BY_CATEGORY_URL, method: .get,parameters: parameters, headers: headers).responseData { response in
             SVProgressHUD.dismiss()
             var resultString = ""
             if let data = response.data{
@@ -46,12 +45,14 @@ class FavoriteTableViewController: UITableViewController {
                 let json = JSON(response.data!)
                 print("JSON: \(json)")
                 
-                if let array = json.array {
-                    for item in array{
-                        let movie = Movie(json:item)
-                        self.arrayFavorite.append(movie)
+                if json["content"].exists() {
+                    if let array = json["content"].array{
+                        for item in array{
+                            let movie = Movie(json:item)
+                            self.movies.append(movie)
+                        }
+                        self.tableView.reloadData()
                     }
-                    self.tableView.reloadData()
                 } else {
                     SVProgressHUD.showError(withStatus: "Connection Error")
                 }
@@ -75,16 +76,15 @@ class FavoriteTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return arrayFavorite.count
+        return movies.count
     }
 
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieTableViewCell
 
         // Configure the cell...
-        cell.setData(movie: arrayFavorite[indexPath.row])
-        
+        cell.setData(movie: movies[indexPath.row])
 
         return cell
     }

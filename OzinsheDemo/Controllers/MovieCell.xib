@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="153" id="Pi4-D9-xEK" userLabel="MovieCell" customClass="MovieTableViewCell" customModule="OzinsheDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pi4-D9-xEK" id="dwa-fh-5bV">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="Cv3-9T-zPz">
+                        <rect key="frame" x="24" y="24" width="71" height="104"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71" id="74e-W3-ys3"/>
+                            <constraint firstAttribute="height" constant="104" id="ku8-eu-q7u"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қызғалдақтар мекені" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ng3-05-l9q">
+                        <rect key="frame" x="112" y="24" width="171" height="21"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.094117647060000004" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023 • Телехикая • Мультфильм" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-0l-Wqu">
+                        <rect key="frame" x="111.99999999999999" y="53" width="180.66666666666663" height="14"/>
+                        <fontDescription key="fontDescription" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
+                        <color key="textColor" red="0.61176470589999998" green="0.63921568630000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFC-ek-Ih3">
+                        <rect key="frame" x="112" y="91" width="79" height="22"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Play" translatesAutoresizingMaskIntoConstraints="NO" id="LxV-mD-aEQ">
+                                <rect key="frame" x="12" y="3" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="U5O-zm-9ar"/>
+                                    <constraint firstAttribute="width" constant="16" id="krh-ck-anP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қарау" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDc-6f-Hrh">
+                                <rect key="frame" x="32" y="4" width="35" height="14"/>
+                                <fontDescription key="fontDescription" name="SFMono-Bold" family="SF Mono" pointSize="12"/>
+                                <color key="textColor" red="0.59215686270000001" green="0.32549019610000002" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.93333333330000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pDc-6f-Hrh" secondAttribute="trailing" constant="12" id="9e8-Ad-dwU"/>
+                            <constraint firstItem="LxV-mD-aEQ" firstAttribute="leading" secondItem="tFC-ek-Ih3" secondAttribute="leading" constant="12" id="CLQ-ga-g5k"/>
+                            <constraint firstItem="pDc-6f-Hrh" firstAttribute="top" secondItem="tFC-ek-Ih3" secondAttribute="top" constant="4" id="EqI-ll-z9N"/>
+                            <constraint firstItem="LxV-mD-aEQ" firstAttribute="centerY" secondItem="tFC-ek-Ih3" secondAttribute="centerY" id="Vhs-PX-CcR"/>
+                            <constraint firstItem="pDc-6f-Hrh" firstAttribute="leading" secondItem="LxV-mD-aEQ" secondAttribute="trailing" constant="4" id="c76-0l-8S1"/>
+                            <constraint firstAttribute="bottom" secondItem="pDc-6f-Hrh" secondAttribute="bottom" constant="4" id="fyy-x1-XSz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Cv3-9T-zPz" firstAttribute="top" secondItem="dwa-fh-5bV" secondAttribute="top" constant="24" id="5xL-LP-Q38"/>
+                    <constraint firstItem="Cv3-9T-zPz" firstAttribute="leading" secondItem="dwa-fh-5bV" secondAttribute="leading" constant="24" id="DHZ-fx-Ky7"/>
+                    <constraint firstItem="tFC-ek-Ih3" firstAttribute="leading" secondItem="Cv3-9T-zPz" secondAttribute="trailing" constant="17" id="WCb-Sr-Zcj"/>
+                    <constraint firstItem="ng3-05-l9q" firstAttribute="leading" secondItem="Cv3-9T-zPz" secondAttribute="trailing" constant="17" id="Wb7-bJ-sat"/>
+                    <constraint firstItem="B5P-0l-Wqu" firstAttribute="leading" secondItem="Cv3-9T-zPz" secondAttribute="trailing" constant="17" id="c58-5i-6hZ"/>
+                    <constraint firstItem="tFC-ek-Ih3" firstAttribute="top" secondItem="B5P-0l-Wqu" secondAttribute="bottom" constant="24" id="hG7-cy-SIa"/>
+                    <constraint firstItem="B5P-0l-Wqu" firstAttribute="top" secondItem="ng3-05-l9q" secondAttribute="bottom" constant="8" id="kWu-gf-eYV"/>
+                    <constraint firstItem="ng3-05-l9q" firstAttribute="top" secondItem="dwa-fh-5bV" secondAttribute="top" constant="24" id="rim-FI-PMb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="ng3-05-l9q" id="1Hd-bW-vAA"/>
+                <outlet property="playView" destination="tFC-ek-Ih3" id="2s0-Qi-KBN"/>
+                <outlet property="posterImageView" destination="Cv3-9T-zPz" id="qj9-cE-J3K"/>
+                <outlet property="yearLabel" destination="B5P-0l-Wqu" id="NOp-Dg-bv9"/>
+            </connections>
+            <point key="canvasLocation" x="2" y="-7"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image1" width="143" height="208"/>
+        <image name="Play" width="16.333333969116211" height="16"/>
+    </resources>
+</document>
