@@ -179,7 +179,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         let headers: HTTPHeaders = ["Authorization":"Bearer \(Storage.sharedInstance.accessToken)"]
         
-        AF.request(Urls.CATEFORIES_URL, method: .get, headers: headers).responseData { response in
+        AF.request(Urls.CATEGORIES_URL, method: .get, headers: headers).responseData { response in
             SVProgressHUD.dismiss()
             var resultString = ""
             if let data = response.data{

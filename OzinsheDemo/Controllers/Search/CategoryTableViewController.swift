@@ -24,6 +24,8 @@ class CategoryTableViewController: UITableViewController {
         let MovieCellnib = UINib(nibName: "MovieCell", bundle: nil)
         tableView.register(MovieCellnib, forCellReuseIdentifier: "MovieCell")
         
+        self.title = categoryName
+        
         downloadMoviesByCategory()
     }
     

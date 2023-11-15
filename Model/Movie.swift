@@ -32,6 +32,9 @@ class Movie {
     public var categories: [Category] = []
     public var favorite = false
     
+    init() {
+    }
+    
     init(json: JSON) {
         if let temp = json["id"].int{
             self.id = temp
