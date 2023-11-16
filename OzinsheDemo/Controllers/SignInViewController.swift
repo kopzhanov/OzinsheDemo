@@ -62,8 +62,12 @@ class SignInViewController: UIViewController {
     
     @IBAction func signin(_ sender: Any) {
         
-        let email = emailTextField.text
-        let password = passwordTextField.text
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        
+        if email.isEmpty || password.isEmpty{
+            return
+        }
         
         SVProgressHUD.show()
         
