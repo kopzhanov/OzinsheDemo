@@ -11,7 +11,9 @@ class OnboardingViewController: UIViewController, UICollectionViewDelegate, UICo
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var arraySlides = [["firstSlide", "ÖZINŞE-ге қош келдің!","Фильмдер, телехикаялар, ситкомдар, анимациялық жобалар, телебағдарламалар мен реалити-шоулар, аниме және тағы басқалары"],["secondSlide","ÖZINŞE-ге қош келдің!","Кез келген құрылғыдан қара\nСүйікті фильміңді  қосымша төлемсіз телефоннан, планшеттен, ноутбуктан қара"],["thirdSlide","ÖZINŞE-ге қош келдің!","Тіркелу оңай. Қазір тіркел де қалаған фильміңе қол жеткіз"]]
+    var arraySlides = [["firstSlide", "ÖZINŞE-ге қош келдің!","Фильмдер, телехикаялар, ситкомдар, анимациялық жобалар, телебағдарламалар мен реалити-шоулар, аниме және тағы басқалары"],
+                       ["secondSlide","ÖZINŞE-ге қош келдің!","Кез келген құрылғыдан қара\nСүйікті фильміңді  қосымша төлемсіз телефоннан, планшеттен, ноутбуктан қара"],
+                        ["thirdSlide","ÖZINŞE-ге қош келдің!","Тіркелу оңай. Қазір тіркел де қалаған фильміңе қол жеткіз"]]
     
     var currentPage = 0 {
         didSet {
@@ -71,7 +73,7 @@ class OnboardingViewController: UIViewController, UICollectionViewDelegate, UICo
         if indexPath.row != 2 {
             nextButton.isHidden = true
         }
-        button.addTarget(self, action: #selector(nextButtonTouched), for: .touchUpInside)
+        nextButton.addTarget(self, action: #selector(nextButtonTouched), for: .touchUpInside)
         
         return cell
     }

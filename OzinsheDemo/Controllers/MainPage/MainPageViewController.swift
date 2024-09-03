@@ -10,7 +10,7 @@ import SwiftyJSON
 import Alamofire
 import SVProgressHUD
 
-class MainPageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainPageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MovieProtocol {
     @IBOutlet weak var tableView: UITableView!
     
     var mainMovies: [MainMovies] = []
@@ -332,15 +332,12 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         
         navigationController?.show(categoryTableViewController, sender: self)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func movieDidSelect(movie: Movie) {
+        let movieinfoVC = storyboard?.instantiateViewController(withIdentifier: "MovieInfoViewController") as! MovieInfoViewController
+        
+        movieinfoVC.movie  = movie
+        
+        navigationController?.show(movieinfoVC, sender: self)
     }
-    */
-
 }

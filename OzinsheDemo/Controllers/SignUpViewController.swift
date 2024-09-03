@@ -20,6 +20,8 @@ class SignUpViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
+        
+        hideKeyboardWhenTappedAround()
     }
     
     func configureViews(){
@@ -50,6 +52,16 @@ class SignUpViewController: UIViewController{
     @IBAction func showPassword(_ sender: Any) {
         passwordTextField.isSecureTextEntry.toggle()
         passwordRepeatTextField.isSecureTextEntry.toggle()
+    }
+    
+    func hideKeyboardWhenTappedAround(){
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
     }
     
     @IBAction func signUp(_ sender: Any) {

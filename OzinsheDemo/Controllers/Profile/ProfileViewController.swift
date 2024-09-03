@@ -52,6 +52,12 @@ class ProfileViewController: UIViewController, LanguageProtocol {
         navigationController?.show(editProfileVC, sender: self)
     }
     
+    @IBAction func ChangePasswordShow(_ sender: Any) {
+        let changePasswordVC = storyboard?.instantiateViewController(withIdentifier: "ChangePasswordViewController") as! ChangePasswordViewController
+        navigationController?.show(changePasswordVC,sender: self)
+    }
+    
+    
     @IBAction func LanguageShow(_ sender: Any) {
         let languageVC = storyboard?.instantiateViewController(withIdentifier: "LanguageViewController") as! LanguageViewController
         

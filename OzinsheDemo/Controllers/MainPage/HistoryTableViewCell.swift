@@ -12,6 +12,8 @@ class HistoryTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var delegate : MovieProtocol?
+    
     var mainMovie = MainMovies()
     
     override func awakeFromNib() {
@@ -62,5 +64,6 @@ class HistoryTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        delegate?.movieDidSelect(movie: mainMovie.movies[indexPath.row])
     }
 }

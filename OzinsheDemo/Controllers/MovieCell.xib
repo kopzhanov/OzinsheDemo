@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -25,7 +27,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қызғалдақтар мекені" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ng3-05-l9q">
                         <rect key="frame" x="112" y="24" width="171" height="21"/>
                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                        <color key="textColor" red="0.066666666669999999" green="0.094117647060000004" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" name="111827 - FFFFFF"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023 • Телехикая • Мультфильм" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-0l-Wqu">
@@ -51,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.97254901959999995" green="0.93333333330000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="F8EEFF - 1C2431"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pDc-6f-Hrh" secondAttribute="trailing" constant="12" id="9e8-Ad-dwU"/>
                             <constraint firstItem="LxV-mD-aEQ" firstAttribute="leading" secondItem="tFC-ek-Ih3" secondAttribute="leading" constant="12" id="CLQ-ga-g5k"/>
@@ -62,6 +64,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="FFFFFF - 111827"/>
                 <constraints>
                     <constraint firstItem="Cv3-9T-zPz" firstAttribute="top" secondItem="dwa-fh-5bV" secondAttribute="top" constant="24" id="5xL-LP-Q38"/>
                     <constraint firstItem="Cv3-9T-zPz" firstAttribute="leading" secondItem="dwa-fh-5bV" secondAttribute="leading" constant="24" id="DHZ-fx-Ky7"/>
@@ -85,5 +88,14 @@
     <resources>
         <image name="Image1" width="143" height="208"/>
         <image name="Play" width="16.333333969116211" height="16"/>
+        <namedColor name="111827 - FFFFFF">
+            <color red="0.067000001668930054" green="0.093999996781349182" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="F8EEFF - 1C2431">
+            <color red="0.97299998998641968" green="0.93300002813339233" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF - 111827">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
