@@ -7,3 +7,9 @@
 */
 "MY_PROFILE" = "Менің профилім";
 "LANGUAGE" = "Тіл";
+"PROFILE" = "Профиль";
+"PERSONAL_DATA" = "Жеке деректер";
+"CHANGE_PASSWORD" = "Құпия сөзді өзгерту";
+"TERMS_AND_CONDITIONS" = "Ережелер мен шарттар";
+"NOTIFICATIONS" = "Хабарландырулар";
+"DARK_MODE" = "Қараңғы режим";
