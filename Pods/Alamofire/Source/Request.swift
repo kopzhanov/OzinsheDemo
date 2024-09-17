@@ -1144,7 +1144,7 @@ public class DataRequest: Request {
         let copiedRequest = request
         return session.dataTask(with: copiedRequest)
     }
-    
+
     /// Called to update the `downloadProgress` of the instance.
     func updateDownloadProgress() {
         let totalBytesReceived = Int64(data?.count ?? 0)

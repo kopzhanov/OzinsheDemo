@@ -14,11 +14,11 @@ PODS:
   - YouTubePlayer (0.7.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.5)
-  - Localize-Swift (~> 3.2)
-  - SDWebImage (~> 5.0)
+  - Alamofire
+  - Localize-Swift
+  - SDWebImage
   - SVProgressHUD
-  - SwiftyJSON (~> 4.0)
+  - SwiftyJSON
   - YouTubePlayer
 
 SPEC REPOS:
@@ -38,6 +38,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
 
-PODFILE CHECKSUM: e50a3ef378d415df7aa9612aafe6194c4e0542e4
+PODFILE CHECKSUM: 1c63a616d828502c459bdbecf5c7ce2415d87216
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2
