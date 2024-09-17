@@ -88,13 +88,17 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     }
     
     
-//    @IBAction func switcherChanged(_ sender: UISwitch) {
-//        if sender.isOn{
-//            super.overrideUserInterfaceStyle = .dark
-//        } else {
-//            super.overrideUserInterfaceStyle = .light
-//        }
-//    }
+    @IBAction func switcherChanged(_ sender: UISwitch) {
+        if sender.isOn{
+            UIApplication.shared.windows.forEach{ window in
+                window.overrideUserInterfaceStyle = .dark
+            }
+        } else {
+            UIApplication.shared.windows.forEach{ window in
+                window.overrideUserInterfaceStyle = .light
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 
