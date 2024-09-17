@@ -28,12 +28,8 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
     
     func addNavBarImage() {
         let image = UIImage(named: "logoMainPage")!
-    
         let logoImageView = UIImageView(image: image)
-        logoImageView.contentMode = .scaleAspectFill
-        
         let imageItem = UIBarButtonItem.init(customView: logoImageView)
-        
         navigationItem.leftBarButtonItem = imageItem
     }
     
@@ -278,6 +274,7 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         if mainMovies[indexPath.row].cellType == .mainBanner{
             let cell = tableView.dequeueReusableCell(withIdentifier: "mainBannerCell", for: indexPath) as! MainBannerTableViewCell
             cell.setData(mainMovie: mainMovies[indexPath.row])
+            cell.delegate = self
             
             return cell
         }
@@ -286,7 +283,8 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         if mainMovies[indexPath.row].cellType == .userHistory{
             let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as! HistoryTableViewCell
             cell.setData(mainMovie: mainMovies[indexPath.row])
-            
+            cell.delegate = self
+
             return cell
         }
         
@@ -302,6 +300,7 @@ class MainPageViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! MainTableViewCell
         
         cell.setData(mainMovie: mainMovies[indexPath.row])
+        cell.delegate = self
         
         return cell
     }

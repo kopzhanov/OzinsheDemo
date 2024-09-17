@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		306BB8827F83406021B80003 /* Pods_OzinsheDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02249F9EA1282101AB88AF49 /* Pods_OzinsheDemo.framework */; };
 		3B25CDC72A6AAEFB00F86548 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25CDC62A6AAEFB00F86548 /* FavoriteTableViewController.swift */; };
 		3B25CDC92A6AB02100F86548 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25CDC82A6AB02100F86548 /* MovieTableViewCell.swift */; };
 		3B2D72BA2B6DAACB00BD5C64 /* SeasonsSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D72B92B6DAACB00BD5C64 /* SeasonsSeriesViewController.swift */; };
@@ -54,11 +53,11 @@
 		3BDC7ED52AFD2374009DF06B /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC7ED42AFD2374009DF06B /* MainTableViewCell.swift */; };
 		3BE88CF02B2E1F7200EA5A23 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE88CEF2B2E1F7200EA5A23 /* Label.swift */; };
 		3BE88CF32B2E498A00EA5A23 /* MoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE88CF22B2E498A00EA5A23 /* MoviePlayerViewController.swift */; };
+		BFDD0E7076AFAF23640BF35E /* Pods_OzinsheDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899CC1DFECF477284039FCBA /* Pods_OzinsheDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02249F9EA1282101AB88AF49 /* Pods_OzinsheDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OzinsheDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15888FFA1222B763B30A466B /* Pods-OzinsheDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo.debug.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2556756B64665A6B76A8641C /* Pods-OzinsheDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo.release.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3B25CDC62A6AAEFB00F86548 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		3B25CDC82A6AB02100F86548 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		3B2D72B92B6DAACB00BD5C64 /* SeasonsSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsSeriesViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +109,8 @@
 		3BDC7ED42AFD2374009DF06B /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		3BE88CEF2B2E1F7200EA5A23 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3BE88CF22B2E498A00EA5A23 /* MoviePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePlayerViewController.swift; sourceTree = "<group>"; };
-		C1DDA52676976DF8B13C97E8 /* Pods-OzinsheDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo.release.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo.release.xcconfig"; sourceTree = "<group>"; };
+		899CC1DFECF477284039FCBA /* Pods_OzinsheDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OzinsheDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC54E984B8E9D7000A371DED /* Pods-OzinsheDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheDemo.debug.xcconfig"; path = "Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				306BB8827F83406021B80003 /* Pods_OzinsheDemo.framework in Frameworks */,
+				BFDD0E7076AFAF23640BF35E /* Pods_OzinsheDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,8 +304,8 @@
 		56726EC354A89FFFE29A0836 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				15888FFA1222B763B30A466B /* Pods-OzinsheDemo.debug.xcconfig */,
-				C1DDA52676976DF8B13C97E8 /* Pods-OzinsheDemo.release.xcconfig */,
+				FC54E984B8E9D7000A371DED /* Pods-OzinsheDemo.debug.xcconfig */,
+				2556756B64665A6B76A8641C /* Pods-OzinsheDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				3BDC7ECD2AF8ACB8009DF06B /* SwiftUI.framework */,
-				02249F9EA1282101AB88AF49 /* Pods_OzinsheDemo.framework */,
+				899CC1DFECF477284039FCBA /* Pods_OzinsheDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -326,11 +326,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B8B56AD2A6A881400119AD7 /* Build configuration list for PBXNativeTarget "OzinsheDemo" */;
 			buildPhases = (
-				FDACB9F7E2AC88E95F812EF8 /* [CP] Check Pods Manifest.lock */,
+				C3370818FCF2A2B78BF18D46 /* [CP] Check Pods Manifest.lock */,
 				3B8B56952A6A881400119AD7 /* Sources */,
 				3B8B56962A6A881400119AD7 /* Frameworks */,
 				3B8B56972A6A881400119AD7 /* Resources */,
-				6014CF332FC0307B621F6B49 /* [CP] Embed Pods Frameworks */,
+				F421331DD9C46C95045B2E63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,24 +395,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6014CF332FC0307B621F6B49 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDACB9F7E2AC88E95F812EF8 /* [CP] Check Pods Manifest.lock */ = {
+		C3370818FCF2A2B78BF18D46 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -432,6 +415,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F421331DD9C46C95045B2E63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OzinsheDemo/Pods-OzinsheDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -566,7 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -622,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -634,7 +634,7 @@
 		};
 		3B8B56AE2A6A881400119AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15888FFA1222B763B30A466B /* Pods-OzinsheDemo.debug.xcconfig */;
+			baseConfigurationReference = FC54E984B8E9D7000A371DED /* Pods-OzinsheDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -647,7 +647,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,7 +666,7 @@
 		};
 		3B8B56AF2A6A881400119AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1DDA52676976DF8B13C97E8 /* Pods-OzinsheDemo.release.xcconfig */;
+			baseConfigurationReference = 2556756B64665A6B76A8641C /* Pods-OzinsheDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -679,7 +679,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

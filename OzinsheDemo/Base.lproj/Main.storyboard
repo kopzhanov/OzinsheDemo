@@ -1460,13 +1460,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қарауды жалғастырыңыз" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQS-rV-bcK">
-                                                    <rect key="frame" x="24" y="22" width="207" height="20"/>
+                                                    <rect key="frame" x="24" y="22" width="342" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" name="111827 - FFFFFF"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yNu-xx-buv">
-                                                    <rect key="frame" x="0.0" y="58" width="390" height="170"/>
+                                                    <rect key="frame" x="0.0" y="58" width="390" height="160"/>
                                                     <color key="backgroundColor" name="FFFFFF - 111827"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="16" minimumInteritemSpacing="16" id="lKz-nD-AjK">
                                                         <size key="itemSize" width="184" height="156"/>
@@ -1476,10 +1476,10 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Fqf-dw-YBV">
-                                                            <rect key="frame" x="24" y="7" width="184" height="156"/>
+                                                            <rect key="frame" x="24" y="3.6666666666666665" width="184" height="152.66666666666663"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7pq-hA-SmP">
-                                                                <rect key="frame" x="0.0" y="0.0" width="184" height="156"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="184" height="152.66666666666663"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jcl-2z-T9M">
@@ -1509,6 +1509,7 @@
                                                                     <constraint firstItem="hDR-oK-LA8" firstAttribute="top" secondItem="jcl-2z-T9M" secondAttribute="bottom" constant="8" id="Rpt-oL-Kj9"/>
                                                                     <constraint firstItem="5ss-RB-GZD" firstAttribute="top" secondItem="hDR-oK-LA8" secondAttribute="bottom" constant="4" id="YhL-BO-Okd"/>
                                                                     <constraint firstItem="hDR-oK-LA8" firstAttribute="leading" secondItem="7pq-hA-SmP" secondAttribute="leading" id="Zkc-ZK-gF9"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="5ss-RB-GZD" secondAttribute="bottom" id="hs7-1j-7KH"/>
                                                                     <constraint firstAttribute="trailing" secondItem="hDR-oK-LA8" secondAttribute="trailing" id="vVd-e8-m8d"/>
                                                                     <constraint firstItem="jcl-2z-T9M" firstAttribute="top" secondItem="7pq-hA-SmP" secondAttribute="top" id="yfC-ZC-COS"/>
                                                                     <constraint firstItem="jcl-2z-T9M" firstAttribute="leading" secondItem="7pq-hA-SmP" secondAttribute="leading" id="zxL-yx-vpr"/>
@@ -1522,7 +1523,8 @@
                                                 <constraint firstAttribute="trailing" secondItem="yNu-xx-buv" secondAttribute="trailing" id="6Vg-0V-EkJ"/>
                                                 <constraint firstItem="kQS-rV-bcK" firstAttribute="leading" secondItem="s3A-jA-pdx" secondAttribute="leading" constant="24" id="7qd-Cb-1Fj"/>
                                                 <constraint firstItem="kQS-rV-bcK" firstAttribute="top" secondItem="s3A-jA-pdx" secondAttribute="top" constant="22" id="F9I-na-nv0"/>
-                                                <constraint firstAttribute="bottom" secondItem="yNu-xx-buv" secondAttribute="bottom" id="WOI-GE-bdR"/>
+                                                <constraint firstAttribute="trailing" secondItem="kQS-rV-bcK" secondAttribute="trailing" constant="24" id="LY1-DV-oap"/>
+                                                <constraint firstAttribute="bottom" secondItem="yNu-xx-buv" secondAttribute="bottom" constant="10" id="WOI-GE-bdR"/>
                                                 <constraint firstItem="yNu-xx-buv" firstAttribute="top" secondItem="kQS-rV-bcK" secondAttribute="bottom" constant="16" id="atI-zJ-XK5"/>
                                                 <constraint firstItem="yNu-xx-buv" firstAttribute="leading" secondItem="s3A-jA-pdx" secondAttribute="leading" id="hmE-O3-hdJ"/>
                                             </constraints>

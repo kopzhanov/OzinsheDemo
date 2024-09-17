@@ -61,7 +61,7 @@ class ChangePasswordViewController: UIViewController {
             
             let parameters = ["password":password]
             
-            AF.request(Urls.CHANGE_PASSWORD_URL,method: .put, parameters: parameters,encoding: JSONEncoding.default, headers: headers).responseData { response in
+            AF.request(Urls.CHANGE_PASSWORD_URL,method: .put, parameters: parameters as Parameters,encoding: JSONEncoding.default, headers: headers).responseData { response in
                 
                 SVProgressHUD.dismiss()
                 

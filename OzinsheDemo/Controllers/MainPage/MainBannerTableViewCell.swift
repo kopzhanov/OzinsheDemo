@@ -58,6 +58,6 @@ class MainBannerTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        delegate?.movieDidSelect(movie: mainMovie.movies[indexPath.row])
+        delegate?.movieDidSelect(movie: mainMovie.bannerMovie[indexPath.row].movie)
     }
 }

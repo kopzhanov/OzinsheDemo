@@ -77,7 +77,7 @@ class SignUpViewController: UIViewController{
         } else {
             let parameters = ["email":email, "password":password]
             
-            AF.request(Urls.SIGNUP_URL,method: .post, parameters: parameters,encoding: JSONEncoding.default).responseData { response in
+            AF.request(Urls.SIGNUP_URL,method: .post, parameters: parameters as Parameters,encoding: JSONEncoding.default).responseData { response in
                 
                 SVProgressHUD.dismiss()
                 
