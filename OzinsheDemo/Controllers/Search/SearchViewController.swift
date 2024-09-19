@@ -76,6 +76,8 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
         tableView.delegate = self
         tableView.dataSource = self
         
+        clearButton.isHidden = true
+        
         let MovieCellnib = UINib(nibName: "MovieCell", bundle: nil)
         tableView.register(MovieCellnib, forCellReuseIdentifier: "MovieCell")
     }
